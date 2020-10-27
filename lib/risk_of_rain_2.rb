@@ -1,6 +1,2 @@
-require "risk_of_rain_2/version"
-
-module RiskOfRain2
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "risk_of_rain_2/version"
+require_relative "risk_of_rain_2/cli"

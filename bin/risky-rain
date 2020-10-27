@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Hello World"
+require './lib/risk_of_rain_2'
+
+RiskOfRain2::CLI.new.call
