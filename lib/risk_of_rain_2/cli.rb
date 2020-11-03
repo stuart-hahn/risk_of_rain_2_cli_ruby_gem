@@ -10,6 +10,7 @@ class RiskOfRain2::CLI
       1. Items
       2. Survivors
       3. Artifacts
+      4. Exit
     DOC
 
     make_choice
@@ -30,10 +31,10 @@ class RiskOfRain2::CLI
     when "3"
       fetch_artifacts
       main_menu
-    when "exit"
-      puts "Womp, womp. See you later."
+    when "4"
+      puts "Goodbye, friend."
     else
-      "You must select a number or type 'exit'"
+      puts "You must select a number."
       make_choice
     end
   end
