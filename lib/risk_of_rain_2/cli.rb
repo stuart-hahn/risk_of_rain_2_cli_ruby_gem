@@ -1,3 +1,6 @@
+require 'open-uri'
+require 'nokogiri'
+
 class RiskOfRain2::CLI
   
   def call
