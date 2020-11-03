@@ -1,14 +1,12 @@
 class RiskOfRain2::CLI
   
   def call
-    puts "\nWelcome to the Risk of Rain 2 CLI Cheatsheet."
-    puts "What type of information are you looking for?"
-    puts ""
-    list_choices
+    main_menu
   end
 
-  def list_choices
+  def main_menu
     puts <<~DOC
+      What sort of info do you want?
       1. Items
       2. Survivors
       3. Artifacts
@@ -25,10 +23,13 @@ class RiskOfRain2::CLI
     case input
     when "1"
       fetch_items
+      main_menu
     when "2"
       fetch_survivors
+      main_menu
     when "3"
       fetch_artifacts
+      main_menu
     when "exit"
       puts "Womp, womp. See you later."
     else
